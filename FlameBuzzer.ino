@@ -21,9 +21,11 @@ void loop() {
   delay(100);
 }
 void beep(unsigned char delayms) {
+  // This function is from
+  // http://www.instructables.com/id/Arduino-YL-44-Buzzer-module/step3/Your-code/
+  
   analogWrite(buzzerPin, 20);
   delay(delayms);
   analogWrite(buzzerPin ,0);
-  delay(delayms);
-  
+  delay(delayms); 
 }
